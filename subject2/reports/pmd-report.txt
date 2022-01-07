@@ -1,0 +1,70 @@
+src/com/controller/AccountDeleteController.java:13:	UnnecessaryImport:	UnnecessaryImport: Unused import 'com.mysql.cj.Session'
+src/com/controller/AccountDeleteController.java:13:	UnnecessaryImport:	UnnecessaryImport: Unused import 'com.mysql.cj.Session'
+src/com/controller/AccountDeleteController.java:13:	UnusedImports:	UnusedImports: Unused import 'com.mysql.cj.Session'
+src/com/controller/AccountDeleteController.java:13:	UnusedImports:	UnusedImports: Unused import 'com.mysql.cj.Session'
+src/com/controller/AccountDeleteController.java:26:	UnnecessaryConstructor:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/com/controller/AccountDeleteController.java:26:	UnnecessaryConstructor:	UnnecessaryConstructor: Avoid unnecessary constructors - the compiler will generate these for you
+src/com/controller/AccountDeleteController.java:32:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/com/controller/AccountDeleteController.java:32:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/com/controller/AccountDeleteController.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:34:	MissingOverride:	MissingOverride: The method 'doGet(HttpServletRequest, HttpServletResponse)' is missing an @Override annotation.
+src/com/controller/AccountDeleteController.java:34:	MissingOverride:	MissingOverride: The method 'doGet(HttpServletRequest, HttpServletResponse)' is missing an @Override annotation.
+src/com/controller/AccountDeleteController.java:41:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/com/controller/AccountDeleteController.java:41:	CommentSize:	CommentSize: Comment is too large: Line too long
+src/com/controller/AccountDeleteController.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'request' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:43:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'response' is not assigned and could be declared final
+src/com/controller/AccountDeleteController.java:43:	MissingOverride:	MissingOverride: The method 'doPost(HttpServletRequest, HttpServletResponse)' is missing an @Override annotation.
+src/com/controller/AccountDeleteController.java:43:	MissingOverride:	MissingOverride: The method 'doPost(HttpServletRequest, HttpServletResponse)' is missing an @Override annotation.
+src/com/controller/AccountDeleteController.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'session' could be declared final
+src/com/controller/AccountDeleteController.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'session' could be declared final
+src/com/controller/AccountDeleteController.java:45:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:45:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:46:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:46:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:49:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'conn' (lines '50'-'58').
+src/com/controller/AccountDeleteController.java:49:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'conn' (lines '50'-'58').
+src/com/controller/AccountDeleteController.java:50:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'pstmt' (lines '51'-'59').
+src/com/controller/AccountDeleteController.java:50:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'pstmt' (lines '51'-'59').
+src/com/controller/AccountDeleteController.java:51:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'rs' (lines '52'-'61').
+src/com/controller/AccountDeleteController.java:51:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DD'-anomaly for variable 'rs' (lines '52'-'61').
+src/com/controller/AccountDeleteController.java:51:	ShortVariable:	ShortVariable: Avoid variables with short names like rs
+src/com/controller/AccountDeleteController.java:51:	ShortVariable:	ShortVariable: Avoid variables with short names like rs
+src/com/controller/AccountDeleteController.java:51:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'rs' is never used (overwritten on line 61)
+src/com/controller/AccountDeleteController.java:51:	UnusedAssignment:	UnusedAssignment: The initializer for variable 'rs' is never used (overwritten on line 61)
+src/com/controller/AccountDeleteController.java:51:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'rs'.
+src/com/controller/AccountDeleteController.java:51:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'rs'.
+src/com/controller/AccountDeleteController.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'no' could be declared final
+src/com/controller/AccountDeleteController.java:52:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'no' could be declared final
+src/com/controller/AccountDeleteController.java:52:	ShortVariable:	ShortVariable: Avoid variables with short names like no
+src/com/controller/AccountDeleteController.java:52:	ShortVariable:	ShortVariable: Avoid variables with short names like no
+src/com/controller/AccountDeleteController.java:53:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:53:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:54:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/com/controller/AccountDeleteController.java:54:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sql' could be declared final
+src/com/controller/AccountDeleteController.java:56:	UseTryWithResources:	UseTryWithResources: Consider using a try-with-resources statement instead of explicitly closing the resource
+src/com/controller/AccountDeleteController.java:56:	UseTryWithResources:	UseTryWithResources: Consider using a try-with-resources statement instead of explicitly closing the resource
+src/com/controller/AccountDeleteController.java:59:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:59:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:60:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'rs' (lines '61'-'78').
+src/com/controller/AccountDeleteController.java:60:	DataflowAnomalyAnalysis:	DataflowAnomalyAnalysis: Found 'DU'-anomaly for variable 'rs' (lines '61'-'78').
+src/com/controller/AccountDeleteController.java:60:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:60:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:60:	UnusedAssignment:	UnusedAssignment: The value assigned to variable 'rs' is never used
+src/com/controller/AccountDeleteController.java:60:	UnusedAssignment:	UnusedAssignment: The value assigned to variable 'rs' is never used
+src/com/controller/AccountDeleteController.java:61:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:61:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:62:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/controller/AccountDeleteController.java:62:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/controller/AccountDeleteController.java:63:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:63:	SystemPrintln:	SystemPrintln: System.out.println is used
+src/com/controller/AccountDeleteController.java:67:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:67:	LawOfDemeter:	LawOfDemeter: Potential violation of Law of Demeter (object not created locally)
+src/com/controller/AccountDeleteController.java:72:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/controller/AccountDeleteController.java:72:	AvoidCatchingGenericException:	AvoidCatchingGenericException: Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/com/controller/AccountDeleteController.java:73:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
+src/com/controller/AccountDeleteController.java:73:	AvoidPrintStackTrace:	AvoidPrintStackTrace: Avoid printStackTrace(); use a logger call instead.
