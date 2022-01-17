@@ -1,6 +1,7 @@
 # AccountSite
 가계부 사이트
  ##깃허브와 함께 시작한 프로젝트가 아니라서 한번에 올림.
+영상 : https://youtu.be/oNxS0AR2xq4
  
  # 프로젝트 하면서 적어둔 기록장
  
