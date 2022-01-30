@@ -20,11 +20,8 @@ public class MoneyNoteDAO {
 	/* 초기화면 그리고 검색 없는 상황 에 사용 */
 	public ArrayList<MoneyNoteDTO> getMoneyNoteAll(String id){
 		ArrayList<MoneyNoteDTO> list = new ArrayList<MoneyNoteDTO>();
-		//String url = "jdbc:mysql://localhost:3307/moneyweb";
-		//String user = "root";
-		//String password = "1234";
+
 		try {
-			//conn = DriverManager.getConnection(url, user, password);
 			if(conn==null) {
 				conn = new DBconnection().getConnection();
 			}

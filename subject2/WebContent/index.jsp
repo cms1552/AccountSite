@@ -47,6 +47,7 @@
 		httpRequest.onreadystatechange = function(){
 			if(httpRequest.readyState == 4){
 				var resultText = httpRequest.responseText;
+				//alert(resultText);
 				if(resultText == 0){
 					alert("아이디가 존재하지 않습니다.");
 					return false;
@@ -59,7 +60,7 @@
 			}
 		}
 		//외부접속에서 로그인이 안되길래 봤더니 localhost임 -> 변경 완료
-		httpRequest.open("POST", "/Login", true);
+		httpRequest.open("POST", "./Login", true);
 		//httpRequest.open("POST", "http://localhost:8000/subject2/Login", true);
 		httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 		httpRequest.send(param);

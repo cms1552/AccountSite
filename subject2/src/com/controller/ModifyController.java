@@ -65,13 +65,7 @@ public class ModifyController extends HttpServlet {
 		}catch (Exception e) {
 			System.out.println("member modify error : "+e);
 		}finally {
-			//if(rs!=null)
-			//	try {
-				//	rs.close();
-				//} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					//e.printStackTrace();
-				//}
+
 			if(pstmt!=null)
 				try {
 					pstmt.close();

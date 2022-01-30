@@ -55,62 +55,6 @@ public class LoginController extends HttpServlet {
 			out.println("0");
 		}
 		
-		//response.sendRedirect("loginsuccese.jsp");
-		
-		//로그인을 ajax 로 하기로 마음 먹기 전에 작성해놓은 코드
-		/*
-		String id = request.getParameter("id");
-		String password = request.getParameter("password");
-		String url = "jdbc:mysql://localhost:3307/moneyDB";
-		String user ="root";
-		String pw ="1234";
-		
-		Connection conn = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
-
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(url, user, pw);
-			pstmt = conn.prepareStatement("select password from user where id=?");
-			pstmt.setString(1, id);
-			rs = pstmt.executeQuery();
-			if(rs==null)
-			while(rs.next()) {
-			System.out.println(rs.getString("password"));
-			}
-		}catch (SQLException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally {
-			if(rs!=null) {
-				try {
-					rs.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-			if(pstmt!=null) {
-				try {
-					pstmt.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-			if(conn!=null) {
-				try {
-					conn.close();
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-			
-		}*/
 	}
 
 }

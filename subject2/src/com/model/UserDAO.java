@@ -21,11 +21,7 @@ public class UserDAO {
 	public ArrayList<UserDTO> getUserAll(){
 		ArrayList<UserDTO> list = new ArrayList<UserDTO>();
 		
-		//String url = "jdbc:mysql://localhost:3307/moneyweb";
-		//String user = "root";
-		//String password = "1234";
 		try {
-			//conn = DriverManager.getConnection(url, user, password);
 			if(conn==null) {
 				conn = new DBconnection().getConnection();
 			}
@@ -56,6 +52,7 @@ public class UserDAO {
 		return list;
 	}
 	
+	@SuppressWarnings("finally")
 	public boolean duplicateIdCheck(String id) {
 		//conn = null;
 		//pstmt = null;
@@ -77,21 +74,21 @@ public class UserDAO {
 			if(rs.next()) x =true;
 			return x;
 		}catch (Exception sqle) {
-			throw new RuntimeException(sqle.getMessage());
+			//throw new RuntimeException(sqle.getMessage());
+			System.out.println(sqle.getMessage());
 		}finally {
 			try {
 				if(pstmt!=null) {pstmt.close(); pstmt=null;}
 				if(conn!=null) {conn.close(); conn=null;}
 			}catch (Exception e) {
-				throw new RuntimeException(e.getMessage());
+				//throw new RuntimeException(e.getMessage());
+				System.out.println(e.getMessage());
 			}
+			return x;
 		}
 		
 	}
 	public String idPasswordCheck(String id, String password) {
-		//conn = null;
-		//pstmt = null;
-		//rs = null;
 
 		try {
 			String sql = "select password from member where id=?";
@@ -112,14 +109,17 @@ public class UserDAO {
 				return "1";
 			
 		}catch (Exception sqle) {
-			throw new RuntimeException(sqle.getMessage());
+			//throw new RuntimeException(sqle.getMessage());
+			System.out.println(sqle.getMessage());
 		}finally {
 			try {
 				if(pstmt!=null) {pstmt.close(); pstmt=null;}
 				if(conn!=null) {conn.close(); conn=null;}
 			}catch (Exception e) {
-				throw new RuntimeException(e.getMessage());
+				//throw new RuntimeException(e.getMessage());
+				System.out.println(e.getMessage());
 			}
+			return "1";
 		
 	}
 }

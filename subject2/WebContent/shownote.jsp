@@ -125,7 +125,7 @@
 		<%
 			} 
 		%></td>
-		<td><button id="mBtn" type="button" class="btn btn-sm" value="m<%=list.get(i).getNo()%>">수정</button></td>
+		<!-- <td><button id="mBtn" type="button" class="btn btn-sm" value="m<%=list.get(i).getNo()%>">수정</button></td>  -->
 		<td><button  id="dBtn" type="button" class="btn btn-sm"  value="d<%=list.get(i).getNo()%>" onclick="noteDel(this)">삭제</button></td>
 	</tr>
 	<%

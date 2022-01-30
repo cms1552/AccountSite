@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.util.DBconnection;
 
 /**
  * Servlet implementation class SignUpController
@@ -38,9 +39,6 @@ public class SignUpController extends HttpServlet {
 		Connection conn = null;
 		Statement stmt = null;
 		int rs = 0;
-		String url = "jdbc:mysql://localhost:3307/moneyweb";
-		String user = "root";
-		String password= "1234";
 		
 		String name = request.getParameter("name");
 		String id = request.getParameter("id");
@@ -52,8 +50,7 @@ public class SignUpController extends HttpServlet {
 		String phone = phone1+"-"+phone2+"-"+phone3;
 		String sql = "insert into member(name, id, password, email, phone) values('"+name+"','"+ id + "','"+ pw + "','"+ email + "','"+ phone + "')";
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(url, user, password);
+			conn = new DBconnection().getConnection();
 			stmt = conn.createStatement();
 			rs = stmt.executeUpdate(sql);
 			System.out.println("데이터베이스 insert 성공!!!! 리턴 값 : " + rs );
